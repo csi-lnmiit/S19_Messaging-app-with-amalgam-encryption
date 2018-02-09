@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E0E0">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/Idname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/IDnametext"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+
+            android:text="ID :"
+            android:textColor="#000"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/IDnametext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/IdPass"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="Enter ID"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:id="@+id/IdPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Passtext"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingTop="20dp"
+
+            android:text="Password :"
+            android:textColor="#000"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/Passtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:hint="Enter Password"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/LoginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Passtext"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:onClick="LoginstartIntent"
+            android:padding="10dp"
+            android:text="LOGIN"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/Idsignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/LoginButton"
+            android:onClick="CreateAccountIntent"
+            android:paddingTop="20dp"
+            android:text="@string/CreateAcciunt"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textColorHighlight="#fff"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+    </RelativeLayout>
+</LinearLayout>

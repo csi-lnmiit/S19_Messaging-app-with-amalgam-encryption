@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.csiae.csichatae.CreateAccountActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@android:color/background_dark"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:textColor="@android:color/background_dark"
+            android:textColorHint="@color/colorPrimaryDarkkj"
+            android:textColorLink="@color/colorPrimary"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="@android:color/background_dark"
+            android:ems="10"
+            android:hint="Email Id"
+            android:inputType="textEmailAddress"
+            android:textColor="@android:color/background_dark"
+            android:textColorHint="@color/colorPrimaryDarkkj"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:backgroundTint="@android:color/background_dark"
+            android:ems="10"
+            android:hint="Phone"
+            android:inputType="phone"
+            android:textColor="@android:color/black"
+            android:textColorHighlight="@color/colorPrimaryDarkkj"
+            android:textColorHint="@color/colorPrimaryDarkkj"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText5"
+            android:layout_alignStart="@+id/editText5"
+            android:layout_below="@+id/editText5"
+            android:layout_marginTop="42dp"
+            android:backgroundTint="@android:color/background_dark"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@android:color/background_dark"
+            android:textColorHighlight="@color/colorPrimaryDarkkj"
+            android:textColorHint="@color/colorPrimaryDarkkj"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editText7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText6"
+            android:layout_alignStart="@+id/editText6"
+            android:layout_below="@+id/editText6"
+            android:layout_marginTop="46dp"
+            android:backgroundTint="@android:color/background_dark"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:textColor="@android:color/background_dark"
+            android:textColorHint="@color/colorPrimaryDarkkj"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText7"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:background="@color/colorPrimaryDarkk"
+            android:text="Submit"
+            android:textColor="@color/colorPrimary" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
