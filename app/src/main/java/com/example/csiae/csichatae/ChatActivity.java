@@ -1,7 +1,10 @@
 package com.example.csiae.csichatae;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -29,6 +32,14 @@ public class ChatActivity extends AppCompatActivity {
         ChatArrayadpter chatadapter = new ChatArrayadpter(this,chatsadapter);
         ListView listView = (ListView)findViewById(R.id.ListChats);
         listView.setAdapter(chatadapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent mess = new Intent(ChatActivity.this,messages.class);
+                startActivity(mess);
+
+            }
+        });
     }
 
 
