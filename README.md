@@ -16,7 +16,9 @@ We are going to use the the Open Whisper Signal Encryption model and Improvise w
 
 ## Session Key Types Used
 •Root Key – A 32-byte value that is used to create Chain Keys.
+
 •Chain Key – A 32-byte value that is used to create Message Keys.
+
 •Message Key – An 80-byte value that is used to encrypt message contents. 32 bytes are used for an AES-256 key, 32 bytes for a HMAC-SHA256 key, and 16 bytes for an IV.
 
 ## Client Registration methodology
