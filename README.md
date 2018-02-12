@@ -1,12 +1,17 @@
 # CSIChatAE
 CSIChatAE messaging app allows people to exchange messages between 2 people providing end-to-end encryption.
+
 This end-to-end encryption protocol is designed to prevent third parties from having plaintext access to messages.
+
 What’s more, even if encryption keys from a user’s device are ever physically compromised, they cannot be used to go back in time to decrypt previously transmitted messages.
+
 We are going to use the the Open Whisper Signal Encryption model and Improvise with a more efficient Elliptic Curve element.
 
 ## Public Key Types Used 
 •Identity Key Pair – A long-term Curve key pair, generated at install time.
+
 •Signed Pre Key – A medium-term Curve key pair, generated at install time, signed by the Identity Key, and rotated on a periodic timed basis.
+
 •One-Time Pre Keys – A queue of Curve key pairs for one time use, generated at install time, and replenished as needed.
 
 ## Session Key Types Used
